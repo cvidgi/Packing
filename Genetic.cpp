@@ -7,6 +7,8 @@ std::unordered_map<unsigned int, std::shared_ptr<Node>> box_params_by_id;
 std::set<Corner, ComparatorForFirstCorner> best_for_first; // Corners in Genetic
 std::set<Corner, ComparatorForSecondCorner> best_for_second;
 
+std::vector<Corner> global_ans;
+
 std::mt19937 rnd;
 
 void Clear() {
@@ -59,8 +61,7 @@ std::vector<std::vector<Gen>> GeneratePopulation(std::vector<Node> &data, int co
     std::vector<std::vector<Gen>> res(count + 10, std::vector<Gen>());
     for (int i = 0; i < count; ++i) { // random genotype
         for (int j = 0; j < data.size(); ++j) {
-            for (int k = 0; k < 1; ++k) {
-                //for (int k = 0; k < data[j].count_; ++k) { // TODO FIX count
+            for (int k = 0; k < data[j].count_; ++k) {
                 res[i].emplace_back();
                 res[i].back().index = res[i].size() - 1;
                 res[i].back().box_id = data[j].id_;
@@ -78,8 +79,7 @@ std::vector<std::vector<Gen>> GeneratePopulation(std::vector<Node> &data, int co
     std::sort(data.begin(), data.end(), CompForData2);
     for (int i = 0; i < 10; ++i) { // special genotype
         for (int j = 0; j < data.size(); ++j) {
-            for (int k = 0; k < 1; ++k) {
-                //for (int k = 0; k < data[j].count_; ++k) { // TODO FIX count
+            for (int k = 0; k < data[j].count_; ++k) {
                 res[count + i].emplace_back();
                 res[count + i].back().index = res[count + i].size() - 1;
                 res[count + i].back().box_id = data[j].id_;
@@ -191,6 +191,9 @@ void PlaceSecondType(Gen &gen, int W, int L, int H, bool check) {
 }
 
 void CheckCorrectness(unsigned int size) {
+    if (size != ans.size()) {
+        throw std::runtime_error("Not all the boxes are packed\n");
+    }
     for (int a = 0; a < ans.size(); ++a) {
         if (ans[a].h2 < 0) {
             throw std::runtime_error("ERR_H\n");
@@ -202,7 +205,7 @@ void CheckCorrectness(unsigned int size) {
             throw std::runtime_error("ERR_L\n");
         }
         for (int b = a + 1; b < ans.size(); ++b) {
-            if (IntersectionBoxes(ans[a], ans[b]) || ans.size() != size) {
+            if (IntersectionBoxes(ans[a], ans[b])) {
 //                std::cout << ans[a].id << " " << ans[b].id << "\n";
 //
 //                std::cout << ans[a].h2 << " " << ans[a].h << "\n";
@@ -227,12 +230,18 @@ ld CalcPercGen(std::vector<Gen> genotype, std::vector<Node> &data, int W, int L)
     best_for_second.insert({0, 0, W, L});
     std::sort(genotype.begin(), genotype.end(), ComparatorForByIndex);
     int H = 0;
-    for (int i = 0; i < genotype.size(); ++i) {
+    int ind = 0; // index box in data
+    int row = 0;
+    for (int i = 0; i < genotype.size(); ++i, ++row) {
+        if (row == data[ind].count_) {
+            ++ind;
+            row = 0;
+        }
         if (genotype[i].rotation == 0) {
             int bestH = H + 10000;
             int best_rot = 0;
             for (int j = 1; j <= 2; ++j) {
-                *box_params_by_id[data[i].id_] = data[i];
+                *box_params_by_id[data[ind].id_] = data[ind];
                 Rotate(box_params_by_id[genotype[i].box_id], j);
                 if (genotype[i].type == 0) {
                     PlaceFirstType(genotype[i], W, L, H, true);
@@ -246,7 +255,7 @@ ld CalcPercGen(std::vector<Gen> genotype, std::vector<Node> &data, int W, int L)
                 }
                 ans.pop_back();
             }
-            *box_params_by_id[data[i].id_] = data[i];
+            *box_params_by_id[data[ind].id_] = data[ind];
             Rotate(box_params_by_id[genotype[i].box_id], best_rot);
             if (genotype[i].type == 0) {
                 PlaceFirstType(genotype[i], W, L, H, false);
@@ -264,11 +273,11 @@ ld CalcPercGen(std::vector<Gen> genotype, std::vector<Node> &data, int W, int L)
         }
         H = std::max(H, ans.back().h);
     }
-    CheckCorrectness(data.size());
+    CheckCorrectness(genotype.size());
     return Percorellation(ans, H, W, L);
 }
 
-ld Genetic(std::vector<Node> data, int W, int L, int generations,
+std::pair<ld, std::vector<Corner>> Genetic(std::vector<Node> data, int W, int L, int generations,
            int count, int cross_count, int pop_limit,
            int mutation_count) { // count - genotypes count in first population
     std::vector<std::vector<Gen>> population = GeneratePopulation(data, count);
@@ -294,6 +303,10 @@ ld Genetic(std::vector<Node> data, int W, int L, int generations,
         std::vector<std::pair<ld, std::vector<Gen>>> gen_with_perc(population.size());
         for (int j = 0; j < population.size(); ++j) {
             gen_with_perc[j] = std::make_pair(CalcPercGen(population[j], data, W, L), population[j]);
+            if (gen_with_perc[j].first > best) {
+                best = std::max(best, gen_with_perc[j].first);
+                global_ans = ans;
+            }
         }
         std::sort(gen_with_perc.begin(), gen_with_perc.end(), cmp);
         while (gen_with_perc.size() > pop_limit) {
@@ -303,7 +316,6 @@ ld Genetic(std::vector<Node> data, int W, int L, int generations,
         for (int j = 0; j < gen_with_perc.size(); ++j) {
             population[j] = gen_with_perc[j].second;
         }
-        best = std::max(best, gen_with_perc[0].first);
     }
-    return best;
+    return {best, global_ans};
 }

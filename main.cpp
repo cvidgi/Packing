@@ -11,9 +11,11 @@
 
 #include <fstream>
 #include <sstream>
-#include <iostream>
+#include <filesystem>
 #include "Genetic.h"
 
+// Output file has format:
+// box_id,count,length,wight,height,weight,strength,aisle,caustic
 std::vector<Node> ReadFile(std::string &path) {
     std::ifstream file(path);
     std::string line;
@@ -21,7 +23,7 @@ std::vector<Node> ReadFile(std::string &path) {
     std::vector<Node> boxes;
 
     if (!file.is_open()) {
-        std::cerr << "Can't open file\n" << std::endl;
+        std::cerr << "Can't open input file\n" << std::endl;
         return {};
     }
 
@@ -56,22 +58,63 @@ std::vector<Node> ReadFile(std::string &path) {
     return boxes;
 }
 
+// Output file has format:
+// Total_H Percorellation
+// box_id,x,y,z,x2,y2,z2 with x,y,z < x2,y2,z2
+void WriteFile(std::string &path, std::vector<Corner> &ans) {
+    std::ofstream file(path);
+
+    if (!file.is_open()) {
+        std::cerr << "Can't open output file\n" << std::endl;
+        return;
+    }
+
+    int h = 0;
+    for (int i = 0; i < ans.size(); ++i) {
+        h = std::max(h, ans[i].h);
+    }
+    file << h << " " << Percorellation(ans, h, 800, 1200) << "\n";
+
+    for (int i = 0; i < ans.size(); ++i) {
+        file << ans[i].id << ',' << ans[i].w2 << ',' << ans[i].l2 << ',' << ans[i].h2 << ',' << ans[i].w << ','
+             << ans[i].l << ',' << ans[i].h << '\n';
+    }
+
+    file.close();
+}
+
+//Genetic(data, 800, 1200, 25, 100); // working +-5 min, res = 0.756315
+//Genetic(data, 800, 1200, 50, 10); // working +-10 min, res = 0.762408
+//Genetic(data, 800, 1200, 100, 10); // working +-20 min, res = 0.763648
+
 int main() {
     ld sum2 = 0;
+    std::string dir_name = "Output"; // Dir with result Placement
+
+    if (!std::filesystem::exists(dir_name)) {
+        if (!std::filesystem::create_directory(dir_name)) {
+            std::cerr << "Can't create the directory" << std::endl;
+        }
+    }
+
     for (int i = 1; i <= 436; ++i) {
-        std::string path = "Newburgh Orders 0802 2011/"; // Change path if need
-        path += std::to_string(i);
-        path += ".csv";
-        std::vector<Node> data = ReadFile(path);
-        sum2 += Genetic(data, 800, 1200, 25, 100); // working +-5 min, res = 0.735853
-        //sum2 += Genetic(data, 800, 1200, 50, 10); // working +-10 min, res = 0.74221
-        //sum2 += Genetic(data, 800, 1200, 50, 250, 25, 25); // working +-14 min, res = 0.743678
-        std::cout << i << "\n";
+        std::string input = "Input/"; // Change path if you need it
+        input += std::to_string(i);
+        input += ".csv";
+        std::vector<Node> data = ReadFile(input);
+
+        auto res = Genetic(data, 800, 1200, 25, 100);
+        sum2 += res.first;
+
+        std::string output = "Output/"; // Change path if you need it
+        output += std::to_string(i);
+        output += ".csv";
+        WriteFile(output, res.second);
+
         if (i % 50 == 0) {
             std::cout << "Complete " << i << "\n";
         }
     }
-    //std::cout << sum2 / 50 << "\n";
     std::cout << sum2 / 436 << "\n";
     return 0;
 }

@@ -1,6 +1,7 @@
 #include <set>
 #include <unordered_map>
 #include <random>
+#include <iostream>
 #include "Helpers.h"
 
 void Mutation(std::vector<Gen> &data, unsigned int count1, unsigned int count2);
@@ -18,6 +19,6 @@ void CheckCorrectness(unsigned int size); // Checking the correctness of the arr
 ld CalcPercGen(std::vector<Gen> genotype, std::vector<Node> &data, int W, int L); // Arrange the boxes for the gene
 // and calculate the percorellation coefficient
 
-ld Genetic(std::vector<Node> data, int W, int L, int generations,
+std::pair<ld, std::vector<Corner>> Genetic(std::vector<Node> data, int W, int L, int generations,
            int count = 100, int cross_count = 20, int pop_limit = 15,
            int mutation_count = 10);
