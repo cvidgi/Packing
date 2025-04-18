@@ -1,15 +1,16 @@
+#pragma once
 #include "Genetic.h"
 
-std::vector<Corner> ans;
+thread_local std::vector<Corner> ans;
 
-std::unordered_map<unsigned int, std::shared_ptr<Node>> box_params_by_id;
+thread_local std::unordered_map<unsigned int, std::shared_ptr<Node>> box_params_by_id;
 
-std::set<Corner, ComparatorForFirstCorner> best_for_first; // Corners in Genetic
-std::set<Corner, ComparatorForSecondCorner> best_for_second;
+thread_local std::set<Corner, ComparatorForFirstCorner> best_for_first; // Corners in Genetic
+thread_local std::set<Corner, ComparatorForSecondCorner> best_for_second;
 
-std::vector<Corner> global_ans;
+thread_local std::vector<Corner> global_ans;
 
-std::mt19937 rnd;
+thread_local std::mt19937 rnd;
 
 void Clear() {
     ans.clear();
@@ -94,7 +95,7 @@ std::vector<std::vector<Gen>> GeneratePopulation(std::vector<Node> &data, int co
     return res;
 }
 
-void PlaceFirstType(Gen &gen, int W, int L, int H, bool check) {
+void PlaceFirstType(Gen &gen, int W, int L, int H, bool check) { //Place box closer to (0, 0, 0)
     Node box = *box_params_by_id[gen.box_id];
     for (Corner corn: best_for_first) {
         Corner copy = corn;
@@ -118,16 +119,16 @@ void PlaceFirstType(Gen &gen, int W, int L, int H, bool check) {
                 return;
             }
             best_for_first.erase(copy); // add new corners in set
-            copy.w += box.wight_;
-            copy.w2 += box.wight_;
-            best_for_first.insert(copy);
-            copy.w -= box.wight_;
-            copy.w2 -= box.wight_;
             copy.h += box.height_;
             copy.h2 += box.height_;
             best_for_first.insert(copy);
             copy.h -= box.height_;
             copy.h2 -= box.height_;
+            copy.w += box.wight_;
+            copy.w2 += box.wight_;
+            best_for_first.insert(copy);
+            copy.w -= box.wight_;
+            copy.w2 -= box.wight_;
             copy.l += box.length_;
             copy.l2 += box.length_;
             best_for_first.insert(copy);
@@ -144,7 +145,7 @@ void PlaceFirstType(Gen &gen, int W, int L, int H, bool check) {
     best_for_first.insert({0, H + box.height_, 0, 0, H + box.height_, 0, 0});
 }
 
-void PlaceSecondType(Gen &gen, int W, int L, int H, bool check) {
+void PlaceSecondType(Gen &gen, int W, int L, int H, bool check) { //Place box closer to (0, W, L)
     Node box = *box_params_by_id[gen.box_id];
     for (Corner corn: best_for_second) {
         Corner copy = corn;
@@ -169,12 +170,12 @@ void PlaceSecondType(Gen &gen, int W, int L, int H, bool check) {
                 return;
             }
             best_for_second.erase(copy);
-            copy.w -= box.wight_;
-            best_for_second.insert(copy);
-            copy.w += box.wight_;
             copy.h += box.height_;
             best_for_second.insert(copy);
             copy.h -= box.height_;
+            copy.w -= box.wight_;
+            best_for_second.insert(copy);
+            copy.w += box.wight_;
             copy.l -= box.length_;
             best_for_second.insert(copy);
             return;
@@ -265,7 +266,7 @@ ld CalcPercGen(std::vector<Gen> genotype, std::vector<Node> &data, int W, int L)
             H = std::max(H, ans.back().h);
             continue;
         }
-        Rotate(box_params_by_id[genotype[i].box_id], genotype[i].rotation); // TODO make Uniq id for boxes :(
+        Rotate(box_params_by_id[genotype[i].box_id], genotype[i].rotation);
         if (genotype[i].type == 0) {
             PlaceFirstType(genotype[i], W, L, H, false);
         } else {
@@ -278,8 +279,8 @@ ld CalcPercGen(std::vector<Gen> genotype, std::vector<Node> &data, int W, int L)
 }
 
 std::pair<ld, std::vector<Corner>> Genetic(std::vector<Node> data, int W, int L, int generations,
-           int count, int cross_count, int pop_limit,
-           int mutation_count) { // count - genotypes count in first population
+                                           int count, int cross_count, int pop_limit,
+                                           int mutation_count) { // count - genotypes count in first population
     std::vector<std::vector<Gen>> population = GeneratePopulation(data, count);
     ld best = 0;
     for (int i = 0; i < generations; ++i) {

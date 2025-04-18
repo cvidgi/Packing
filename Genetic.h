@@ -1,7 +1,9 @@
+#pragma once
 #include <set>
 #include <unordered_map>
 #include <random>
 #include <iostream>
+#include <thread>
 #include "Helpers.h"
 
 void Mutation(std::vector<Gen> &data, unsigned int count1, unsigned int count2);

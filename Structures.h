@@ -1,3 +1,4 @@
+#pragma once
 struct Node {
     //initial by params
     Node(int id, int count, int height, int length, int wight, int weight, int strength, int aisle, int caustic) : id_(
@@ -7,6 +8,8 @@ struct Node {
                                                                                                                            caustic) {}
 
     Node() = default;
+
+    bool operator==(const Node &other) const = default;
 
     int id_ = 0;
     int count_ = 0;
@@ -27,6 +30,11 @@ struct Corner {
     int h2; // corner closer to 0 0 0
     int w2;
     int l2;
+
+    bool operator<(const Corner &c) const {
+        return std::tie(h, w, l) <
+               std::tie(c.h, c.w, c.l);
+    }
 };
 
 struct Gen {
@@ -34,4 +42,8 @@ struct Gen {
     unsigned int rotation;
     unsigned int type;
     unsigned int index;
+
+    bool operator==(const Gen &other) const {
+        return (rotation == other.rotation) && (type == other.type);
+    }
 };

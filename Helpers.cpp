@@ -1,3 +1,4 @@
+#pragma once
 #include "Helpers.h"
 
 ld Percorellation(std::vector<Corner> &ans, int H, int W, int L) {

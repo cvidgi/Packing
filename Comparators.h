@@ -1,3 +1,4 @@
+#pragma once
 #include <algorithm>
 #include <vector>
 #include "Structures.h"
@@ -44,4 +45,10 @@ inline bool CompForData2(Node &first, Node &second) {
 
 inline bool cmp(std::pair<ld, std::vector<Gen>> &first, std::pair<ld, std::vector<Gen>> &second) {
     return first.first > second.first;
+}
+
+//sort comparator for FCNR
+inline bool cmp_FCNR(Node &first, Node &second) {
+    return std::tie(first.wight_, first.length_, first.height_) >
+           std::tie(second.wight_, second.length_, second.height_);
 }
