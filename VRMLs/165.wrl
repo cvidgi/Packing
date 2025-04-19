@@ -1,0 +1,1189 @@
+#VRML V2.0 utf8
+Transform {
+  translation 6.455 10.785 1.67
+  children [
+    Shape {
+      geometry Box { size 3.09 2.4299999999999997 3.34 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.6 1.39 1.465
+  children [
+    Shape {
+      geometry Box { size 3.2 2.78 2.93 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.455 3.7299999999999995 1.41
+  children [
+    Shape {
+      geometry Box { size 2.91 1.9 2.82 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.705 1.34 4.335
+  children [
+    Shape {
+      geometry Box { size 3.41 2.68 2.81 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 4.83 1.58 1.33
+  children [
+    Shape {
+      geometry Box { size 3.26 3.16 2.66 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.51 4.31 4.08
+  children [
+    Shape {
+      geometry Box { size 5.02 3.06 2.52 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.279999999999999 8.26 1.2
+  children [
+    Shape {
+      geometry Box { size 3.4400000000000004 2.62 2.4 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.26 10.7 4.51
+  children [
+    Shape {
+      geometry Box { size 3.4800000000000004 2.5999999999999996 2.34 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 3.365 10.844999999999999 1.14
+  children [
+    Shape {
+      geometry Box { size 3.09 2.3100000000000005 2.28 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 4.945 1.15 4.07
+  children [
+    Shape {
+      geometry Box { size 3.0700000000000003 2.3 2.28 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.815 8.26 1.135
+  children [
+    Shape {
+      geometry Box { size 3.4899999999999993 2.62 2.27 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.41 8.24 4.475
+  children [
+    Shape {
+      geometry Box { size 3.1799999999999997 2.3200000000000003 2.2700000000000005 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.58 2.085 6.855
+  children [
+    Shape {
+      geometry Box { size 3.16 4.17 2.2299999999999995 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.4350000000000005 4.465 1.085
+  children [
+    Shape {
+      geometry Box { size 4.47 2.6099999999999994 2.17 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.425 10.635 4.385
+  children [
+    Shape {
+      geometry Box { size 4.1899999999999995 2.7300000000000004 2.09 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.655 8.275 4.385
+  children [
+    Shape {
+      geometry Box { size 3.7299999999999995 1.9899999999999993 2.09 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.140000000000001 11.025 6.725
+  children [
+    Shape {
+      geometry Box { size 3.7199999999999998 1.9499999999999993 2.09 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 4.95 1.275 6.25
+  children [
+    Shape {
+      geometry Box { size 3.08 2.55 2.08 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.5 8.530000000000001 6.6899999999999995
+  children [
+    Shape {
+      geometry Box { size 5.0 3.040000000000001 2.0200000000000005 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.715 9.535 8.78
+  children [
+    Shape {
+      geometry Box { size 2.5700000000000003 4.93 2.0199999999999996 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.495 5.8149999999999995 6.6899999999999995
+  children [
+    Shape {
+      geometry Box { size 5.01 2.3899999999999997 2.0200000000000005 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.5 1.0 8.98
+  children [
+    Shape {
+      geometry Box { size 5.0 2.0 2.0200000000000005 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.895 10.48 8.774999999999999
+  children [
+    Shape {
+      geometry Box { size 5.069999999999999 3.039999999999999 2.01 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.52 3.52 8.975
+  children [
+    Shape {
+      geometry Box { size 5.04 3.04 2.0100000000000007 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.355 9.78 10.79
+  children [
+    Shape {
+      geometry Box { size 3.29 4.44 2.0 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.895 7.44 8.77
+  children [
+    Shape {
+      geometry Box { size 5.069999999999999 3.040000000000001 2.0 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.53 1.52 10.99
+  children [
+    Shape {
+      geometry Box { size 5.06 3.04 2.0 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.485 10.485 12.785
+  children [
+    Shape {
+      geometry Box { size 5.029999999999999 3.0299999999999994 1.9900000000000002 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.465 6.525 10.785
+  children [
+    Shape {
+      geometry Box { size 5.07 2.0699999999999994 1.9900000000000002 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.535 4.07 10.985
+  children [
+    Shape {
+      geometry Box { size 5.07 2.0599999999999996 1.9900000000000002 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.42 10.665 10.78
+  children [
+    Shape {
+      geometry Box { size 4.58 2.67 1.9800000000000004 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.52 1.19 12.98
+  children [
+    Shape {
+      geometry Box { size 5.04 2.38 1.9800000000000004 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.545 3.91 12.975000000000001
+  children [
+    Shape {
+      geometry Box { size 5.09 3.0600000000000005 1.9700000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.505 3.995 3.785
+  children [
+    Shape {
+      geometry Box { size 2.9700000000000006 2.43 1.9300000000000002 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.505 6.775 12.95
+  children [
+    Shape {
+      geometry Box { size 5.01 2.669999999999999 1.92 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.545 5.725 0.945
+  children [
+    Shape {
+      geometry Box { size 3.09 2.09 1.89 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.585 11.055 6.625
+  children [
+    Shape {
+      geometry Box { size 3.39 1.8900000000000006 1.8900000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.085 9.51 14.9
+  children [
+    Shape {
+      geometry Box { size 3.83 4.98 1.8599999999999994 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.49 10.745000000000001 14.845
+  children [
+    Shape {
+      geometry Box { size 3.36 2.51 1.75 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.485 8.385 14.84
+  children [
+    Shape {
+      geometry Box { size 3.37 2.21 1.7400000000000002 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.515 6.495 3.6899999999999995
+  children [
+    Shape {
+      geometry Box { size 3.03 1.3100000000000005 1.7399999999999998 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.3149999999999995 5.77 14.835
+  children [
+    Shape {
+      geometry Box { size 3.37 2.5 1.7299999999999986 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.575 9.015 6.54
+  children [
+    Shape {
+      geometry Box { size 2.85 2.0700000000000003 1.7200000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.855 1.675 14.81
+  children [
+    Shape {
+      geometry Box { size 3.71 3.35 1.6799999999999997 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.7550000000000001 6.07 6.51
+  children [
+    Shape {
+      geometry Box { size 2.47 1.88 1.6600000000000001 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.8149999999999995 3.715 6.505
+  children [
+    Shape {
+      geometry Box { size 4.37 1.81 1.6500000000000004 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 3.015 8.46 10.614999999999998
+  children [
+    Shape {
+      geometry Box { size 3.3899999999999997 1.7400000000000002 1.6500000000000004 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.85 4.72 14.785
+  children [
+    Shape {
+      geometry Box { size 3.7 2.7399999999999998 1.629999999999999 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.075 10.585 16.625
+  children [
+    Shape {
+      geometry Box { size 3.8499999999999996 2.83 1.5900000000000016 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.55 7.52 16.615
+  children [
+    Shape {
+      geometry Box { size 4.9 3.3 1.5699999999999985 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.484999999999999 3.3899999999999997 14.75
+  children [
+    Shape {
+      geometry Box { size 3.0300000000000002 2.26 1.5599999999999987 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.075 10.615 16.605
+  children [
+    Shape {
+      geometry Box { size 4.15 2.7699999999999996 1.549999999999999 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.16 4.5 16.595
+  children [
+    Shape {
+      geometry Box { size 3.6799999999999997 2.74 1.5299999999999994 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.745 1.295 16.395
+  children [
+    Shape {
+      geometry Box { size 3.49 2.59 1.4900000000000002 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.74 3.895 16.315
+  children [
+    Shape {
+      geometry Box { size 3.48 2.6100000000000003 1.33 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.365 10.79 18.08
+  children [
+    Shape {
+      geometry Box { size 3.2699999999999996 2.42 1.3199999999999967 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.38 8.385 18.065
+  children [
+    Shape {
+      geometry Box { size 3.24 2.3899999999999997 1.2899999999999991 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.550000000000001 1.545 16.26
+  children [
+    Shape {
+      geometry Box { size 4.12 3.09 1.2200000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.05 1.54 17.745
+  children [
+    Shape {
+      geometry Box { size 4.1 3.08 1.2100000000000009 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 3.0050000000000003 10.715 18.025
+  children [
+    Shape {
+      geometry Box { size 3.45 2.5700000000000003 1.2099999999999973 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.07 1.54 18.950000000000003
+  children [
+    Shape {
+      geometry Box { size 4.14 3.08 1.1999999999999993 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.4450000000000003 7.89 18.015
+  children [
+    Shape {
+      geometry Box { size 4.57 3.08 1.1899999999999977 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.26 1.12 14.56
+  children [
+    Shape {
+      geometry Box { size 3.0999999999999996 2.24 1.1799999999999997 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.54 4.24 17.72
+  children [
+    Shape {
+      geometry Box { size 3.08 2.3200000000000003 1.1600000000000001 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.445 6.045 18.0
+  children [
+    Shape {
+      geometry Box { size 3.1100000000000003 2.29 1.1599999999999966 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.56 8.025 16.41
+  children [
+    Shape {
+      geometry Box { size 3.08 2.29 1.1599999999999984 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.695 10.465 19.314999999999998
+  children [
+    Shape {
+      geometry Box { size 4.609999999999999 3.0700000000000003 1.1500000000000021 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.6899999999999995 7.41 19.314999999999998
+  children [
+    Shape {
+      geometry Box { size 4.62 3.04 1.1500000000000021 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.31 1.515 20.125
+  children [
+    Shape {
+      geometry Box { size 4.62 3.03 1.1499999999999986 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.31 1.515 21.275
+  children [
+    Shape {
+      geometry Box { size 4.62 3.03 1.1500000000000021 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.84 1.295 17.715
+  children [
+    Shape {
+      geometry Box { size 3.4800000000000004 2.59 1.1499999999999986 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.54 4.215 18.875
+  children [
+    Shape {
+      geometry Box { size 3.08 2.2699999999999996 1.1499999999999986 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.67 1.135 18.925
+  children [
+    Shape {
+      geometry Box { size 3.0600000000000005 2.27 1.1499999999999986 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.654999999999999 3.3949999999999996 18.925
+  children [
+    Shape {
+      geometry Box { size 3.0300000000000002 2.2499999999999996 1.1499999999999986 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.31 4.535 21.27
+  children [
+    Shape {
+      geometry Box { size 4.62 3.0100000000000002 1.1400000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.255 10.695 20.46
+  children [
+    Shape {
+      geometry Box { size 3.49 2.6099999999999994 1.1400000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.82 10.844999999999999 19.31
+  children [
+    Shape {
+      geometry Box { size 3.14 2.3100000000000005 1.1400000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.535 4.23 20.02
+  children [
+    Shape {
+      geometry Box { size 3.07 2.3 1.1400000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.16 1.14 20.12
+  children [
+    Shape {
+      geometry Box { size 3.08 2.28 1.1400000000000006 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.8499999999999999 7.79 19.305
+  children [
+    Shape {
+      geometry Box { size 3.06 2.2799999999999994 1.1300000000000026 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.075 3.565 8.535
+  children [
+    Shape {
+      geometry Box { size 2.0700000000000003 3.13 1.13 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.275 3.535 20.1
+  children [
+    Shape {
+      geometry Box { size 3.3099999999999996 2.5100000000000002 1.0999999999999979 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.25 8.09 20.435000000000002
+  children [
+    Shape {
+      geometry Box { size 3.5 2.6000000000000005 1.0899999999999999 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.42 8.015 20.425
+  children [
+    Shape {
+      geometry Box { size 4.16 2.750000000000001 1.0700000000000003 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.855 10.75 20.425
+  children [
+    Shape {
+      geometry Box { size 3.3099999999999996 2.5 1.0700000000000003 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.345000000000001 10.75 21.565
+  children [
+    Shape {
+      geometry Box { size 3.3099999999999996 2.5 1.0700000000000003 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.34 4.035 12.525
+  children [
+    Shape {
+      geometry Box { size 2.5 3.3100000000000005 1.0700000000000003 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.355 8.155000000000001 21.509999999999998
+  children [
+    Shape {
+      geometry Box { size 3.29 2.4700000000000006 1.0599999999999987 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.055 1.395 22.375
+  children [
+    Shape {
+      geometry Box { size 4.11 2.79 1.0499999999999972 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.285 1.265 21.215
+  children [
+    Shape {
+      geometry Box { size 3.33 2.53 1.0499999999999972 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.734999999999999 3.825 10.315
+  children [
+    Shape {
+      geometry Box { size 2.5300000000000002 3.33 1.0500000000000007 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.385 8.355 2.8499999999999996
+  children [
+    Shape {
+      geometry Box { size 3.2300000000000004 2.4300000000000006 0.8999999999999999 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.5 10.8 2.73
+  children [
+    Shape {
+      geometry Box { size 4.82 2.4000000000000004 0.9000000000000004 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.93 10.690000000000001 21.47
+  children [
+    Shape {
+      geometry Box { size 3.5200000000000005 2.619999999999999 0.879999999999999 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.76 4.09 22.285
+  children [
+    Shape {
+      geometry Box { size 3.52 2.5999999999999996 0.8699999999999974 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.605 8.5 2.835
+  children [
+    Shape {
+      geometry Box { size 4.329999999999999 2.1400000000000006 0.8700000000000001 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.68 3.86 22.28
+  children [
+    Shape {
+      geometry Box { size 4.32 2.1399999999999997 0.8599999999999994 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.39 5.715 2.32
+  children [
+    Shape {
+      geometry Box { size 2.78 2.0700000000000003 0.8600000000000001 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.404999999999999 3.8149999999999995 5.18
+  children [
+    Shape {
+      geometry Box { size 2.7700000000000005 2.07 0.8600000000000003 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.425 5.875 5.18
+  children [
+    Shape {
+      geometry Box { size 2.8100000000000005 2.0500000000000007 0.8600000000000003 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.445 1.025 10.42
+  children [
+    Shape {
+      geometry Box { size 2.7700000000000005 2.05 0.8599999999999994 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 1.5250000000000001 6.535 10.215
+  children [
+    Shape {
+      geometry Box { size 2.81 2.05 0.8500000000000014 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.455 1.025 11.245000000000001
+  children [
+    Shape {
+      geometry Box { size 2.79 2.05 0.7900000000000009 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.47 1.03 12.030000000000001
+  children [
+    Shape {
+      geometry Box { size 2.8200000000000003 2.06 0.7799999999999994 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.8400000000000003 8.005 21.384999999999998
+  children [
+    Shape {
+      geometry Box { size 3.7 2.750000000000001 0.7099999999999973 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 6.245 10.71 22.445
+  children [
+    Shape {
+      geometry Box { size 3.51 2.58 0.6899999999999977 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 5.16 1.29 7.62
+  children [
+    Shape {
+      geometry Box { size 3.5 2.58 0.6600000000000001 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
+Transform {
+  translation 2.39 7.865 22.064999999999998
+  children [
+    Shape {
+      geometry Box { size 4.6000000000000005 3.030000000000001 0.6500000000000021 }
+      appearance Appearance {
+        material Material { diffuseColor 0.8 0.5 0.5 }
+      }
+    }
+  ]
+}
